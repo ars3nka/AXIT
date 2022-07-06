@@ -42,7 +42,12 @@ html {
   margin-right: 23px; /* Картинку отодвинуть */
   margin-left: 100px;
   position: relative;
-  top: -140px; /* ??? */
+
+  /* top: -140px; ??? */
+  /* ОБТЕКАНИЕ СЛЕВА РЕШИТ ПРОБЛЕМУ */
+
+  float: left;
+
 }
 
 .main__tabs_right {
@@ -56,6 +61,7 @@ html {
   margin-top: 0px;
   margin-bottom: 27px;
   padding: 47px 0px;
+
 }
 
 .main__tabs_description {
@@ -73,6 +79,11 @@ html {
   border: 0px;
   color: white;
   background-color: #EC7979;
+}
+
+/* КАРТИНКА ПОСЛЕ МАНИПУЛЯЦИЙ ВЫШЕ УЕХАЛА, ПРИШЛОСЬ ДОБАВТЬ ОТСТУП */
+.main__tabs_image {
+  padding-left: 5px;
 }
 
 /* Why this is awesome */
