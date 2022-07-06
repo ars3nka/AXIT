@@ -8,6 +8,7 @@ html {
   width: 1170px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 146px;
 }
 
 .main__tabs_buttons {
@@ -38,12 +39,14 @@ html {
 .main__tabs_left {
   width: 570px;
   display: inline-block;
+  margin-right: 23px; /* Картинку отодвинуть */
   margin-left: 100px;
+  position: relative;
+  top: -140px; /* ??? */
 }
 
 .main__tabs_right {
-  display: inline-block; 
-  /* margin-right: 0px; */
+  display: inline-block;
 }
 
 .main__tabs_header {
@@ -131,7 +134,7 @@ html {
 }
 
 .main__section-block-image {
-  margin-top: 10px;
+  margin-top: 9px;
 }
 
 .main__section-block-header {
@@ -147,4 +150,12 @@ html {
   line-height: 21px;
   font-weight: 400;
   text-align: center;
+}
+
+.main__section-block-image-2 {
+  margin-top: 20px;
+}
+
+.main__section-block-image-3 {
+  margin-top: 14px;
 }
