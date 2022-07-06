@@ -1,0 +1,150 @@
+html {
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Tabs */
+
+.main__tabs {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main__tabs_buttons {
+  margin: 0px;
+  display: block;
+}
+
+.main__tab {
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333333;
+  padding: 10px 82px;
+}
+
+.main__tab_active {
+  border-top: 1px solid #C6CBCD;
+  border-left: 1px solid #C6CBCD;
+  border-right: 1px solid #C6CBCD;
+}
+
+.main__tabs_section {
+  border: 1px solid #C6CBCD;
+  height: 500px;
+}
+
+.main__tabs_left {
+  width: 570px;
+  display: inline-block;
+  margin-left: 100px;
+}
+
+.main__tabs_right {
+  display: inline-block; 
+  /* margin-right: 0px; */
+}
+
+.main__tabs_header {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 0px;
+  margin-bottom: 27px;
+  padding: 47px 0px;
+}
+
+.main__tabs_description {
+  font-size: 18px;
+  line-height: 21.13px;
+  font-weight: normal;
+}
+
+.main__tabs_button {
+  font-family: 'Open Sans', sans-serif;
+  width: 270px;
+  height: 58px;
+  font-weight: 600;
+  font-size: 18px;
+  border: 0px;
+  color: white;
+  background-color: #EC7979;
+}
+
+/* Why this is awesome */
+
+.main__container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main__section-name {
+  font-size: 36px;
+  font-weight: 400;
+  height: 150px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: center; /*Центрирование по горизонтали*/
+  align-items: center;
+}
+
+.main__section-line {
+  border-bottom: 1px solid #EC7979;
+  width: 170px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+.main__section-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #86878B;
+  margin-bottom: 110px;
+  text-align: center;
+}
+
+.main__section-block {
+  max-width: 370px;
+  display: inline-block;
+}
+
+.main__section-block:not(:last-child) {
+  margin-right: 20px;
+}
+
+
+.main__section-block-image-border {
+  height: 92px;
+  width: 92px;
+  border: 1px solid #EC7979;
+  border-radius: 50%;
+  margin-bottom: 39px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main__section-block-image {
+  margin-top: 10px;
+}
+
+.main__section-block-header {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.main__section-block-description {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: center;
+}
