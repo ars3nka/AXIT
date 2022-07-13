@@ -1,23 +1,69 @@
 html {
   font-family: 'Raleway', sans-serif;
+  width: 100%;
+  /* width: 1508px; */
+  margin: 0 auto;
 }
+
+body {
+  margin: 0px;
+}
+
+/* Header */
+
+.header {
+  background-color: #000;
+  height: 75px;
+}
+
+.header_div {
+  display: inline-block;
+}
+
+.header__logo {
+  margin-left: 115px;
+}
+
+.header__nav {
+  float: right;
+  margin-right: 170px;
+  height: 100%;
+  padding-top: 25px;
+}
+
+.header__nav_link {
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  text-decoration: none;
+}
+
+.header__nav_link:not(:last-child) {
+  margin-right: 113px;
+}
+
+/* Main */
+
+
 
 /* Tabs */
 
 .main__tabs {
   width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 146px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
 }
 
 .main__tabs_buttons {
-  margin: 0px;
-  display: block;
+  display: flex;
 }
 
 .main__tab {
-  display: inline-block;
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -33,35 +79,31 @@ html {
 
 .main__tabs_section {
   border: 1px solid #C6CBCD;
-  height: 500px;
+  height: 501px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  width: 1170px;
 }
 
 .main__tabs_left {
-  width: 570px;
-  display: inline-block;
-  margin-right: 23px; /* Картинку отодвинуть */
-  margin-left: 100px;
-  position: relative;
-
-  /* top: -140px; ??? */
-  /* ОБТЕКАНИЕ СЛЕВА РЕШИТ ПРОБЛЕМУ */
-
-  float: left;
-
+  /* width: 570px; */
+  /* margin-right: 23px; Картинку отодвинуть */
+  padding-left: 100px;
+  padding-top: 20px;
 }
 
-.main__tabs_right {
-  display: inline-block;
+.main__tabs_right .main__tabs_image{
+  width: 470px;
+  height: 500px;
 }
 
 .main__tabs_header {
   font-family: 'Open Sans', sans-serif;
   font-size: 30px;
   font-weight: 700;
-  margin-top: 0px;
   margin-bottom: 27px;
   padding: 47px 0px;
-
 }
 
 .main__tabs_description {
@@ -81,17 +123,13 @@ html {
   background-color: #EC7979;
 }
 
-/* КАРТИНКА ПОСЛЕ МАНИПУЛЯЦИЙ ВЫШЕ УЕХАЛА, ПРИШЛОСЬ ДОБАВТЬ ОТСТУП */
-.main__tabs_image {
-  padding-left: 5px;
-}
-
 /* Why this is awesome */
 
-.main__container {
-  max-width: 1170px;
+.main__awesome {
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 58px;
 }
 
 .main__section-name {
@@ -103,6 +141,7 @@ html {
   display: flex;
   justify-content: center; /*Центрирование по горизонтали*/
   align-items: center;
+  text-transform: uppercase;
 }
 
 .main__section-line {
@@ -125,7 +164,12 @@ html {
 
 .main__section-block {
   max-width: 370px;
-  display: inline-block;
+}
+
+.main__section-blocks {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .main__section-block:not(:last-child) {
@@ -169,4 +213,88 @@ html {
 
 .main__section-block-image-3 {
   margin-top: 14px;
+}
+
+/* Pricing */
+
+.main__pricing {
+  background: #F5F5F5;
+  width: 100%;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.main__pricing_items {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.main__pricing_item {
+  /* text-align: center; */
+  /* align-items:center; */
+}
+
+.main__pricing_item-header {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  background: #333333;
+  border: 2px solid #F5F5F5;
+  height: 60px;
+  width: 370px;
+}
+
+.main__pricing_item-price {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  background: #333333;
+  border: 2px solid #F5F5F5;
+  height: 100px;
+  width: 370px;
+}
+
+.main__pricing_item-desc {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.5);
+  background: #333333;
+  border: 2px solid #F5F5F5;
+  height: 50px;
+}
+
+.main__pricing_item-description {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+  color: #86878B;
+  background: #FFFFFF;
+  border: 2px solid #F5F5F5;
+  height: 50px;
 }
