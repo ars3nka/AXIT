@@ -1,0 +1,37 @@
+/* Social */
+
+.main__social {
+  background: #F8EFEF;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+
+.main__social_text {
+  margin-right: 50px;
+}
+
+.main__social_header {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  text-transform: capitalize;
+  color: #333333;
+}
+
+.main__social_description {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #86878B;
+}
+
+.main__social_link:not(:last-child) {
+  margin-right: 45px;
+}

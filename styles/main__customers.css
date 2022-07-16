@@ -1,0 +1,72 @@
+.main__customers {
+  padding: 50px 0px;
+}
+
+.main__customers_items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.main__customers_item {
+  width: 370px;
+}
+
+.main__customers_item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.main__customers_item-text {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #86878B;
+  background: #E2E2E2;
+  border-radius: 10px;
+  padding: 38px 20px;
+}
+
+.main__customers_item-triangle {
+  width: 30px;
+  height: 30px;
+  background: #E2E2E2;
+  transform: rotate(45deg);
+  position: relative;
+  top: -40px;
+  left: 70px;
+}
+
+.main__customers_item-author-name {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  text-transform: capitalize;
+  color: #000000;
+  margin: 0px;
+  margin-top: 10px;
+  margin-bottom: 18px;
+}
+
+.main__customers_item-author-profession {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  margin: 0px;
+}
+
+.main__customers_item-author {
+  display: flex;
+}
+
+.main__customers_item-author-image-div {
+  margin-right: 30px;
+}
