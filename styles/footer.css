@@ -1,0 +1,29 @@
+.footer {
+  background-color: black;
+  height: 164px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer-icons {
+  margin-bottom: 30px;
+}
+
+.footer-icon-link:not(:last-child) {
+  margin-right: 45px;
+}
+
+.footer-text {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  
+}

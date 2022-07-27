@@ -52,6 +52,13 @@
   margin-bottom: 42px;
 }
 
+.main__axit-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+}
+
 .main__axit_button {
   font-family: 'Open Sans';
   font-style: normal;
@@ -74,15 +81,6 @@
   width: 470px;
   height: 450px;
   margin-bottom: 20px;
-}
-
-
-
-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items:center;
 }
 
 .main__axit_form-header {
