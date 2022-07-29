@@ -2,12 +2,9 @@
 
 .header {
   background-color: #000;
-  /* height: 75px; */
-  /* margin-bottom: 500px; */
   display: flex;
   justify-content: space-between;
   align-items:center;
-  flex-wrap: wrap;
   padding-left: 15%;
   padding-right: 15%;
 }
@@ -25,6 +22,27 @@
   margin-right: 113px;
 }
 
+/* @media */
+
+@media screen and (max-width:1300px) {
+  .header {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .header__nav_link:not(:last-child) {
+    margin-right: 90px;
+  }
+}
+
+@media screen and (max-width:910px) {
+  .header {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  .header__nav_link:not(:last-child) {
+    margin-right: 40px;
+  }
+}
 
 
 

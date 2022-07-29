@@ -28,6 +28,7 @@
 
 .main__tab_active {
   border: 1px solid #C6CBCD;
+  border-radius: 5px 5px 0px 0px;
   border-bottom: 0px;
 }
 
@@ -44,7 +45,6 @@
 .main__tabs_left {
   display: flex;
   flex-direction: column;
-  /* width: 570px; */
   margin-right: 23px; 
   padding-left: 100px;
 }
@@ -59,7 +59,6 @@
   font-size: 30px;
   font-weight: 700;
   margin-bottom: 27px;
-  /* padding: 30px 0px; */
 }
 
 .main__tabs_description {
@@ -80,3 +79,98 @@
   background-color: #EC7979;
 }
 
+/* @media */
+
+@media screen and (max-width:1220px) {
+  .main__tabs_section, .main__tabs {
+    width: 992px;
+  }
+  .main__tabs_section {
+    height: 385px;
+  }
+  .main__tabs_left {
+    padding-left: 80px;
+  }
+  .main__tabs_header {
+    font-size: 24px;
+    line-height: 33px;
+  }
+  .main__tabs_description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .main__tabs_button {
+    width: 231px;
+  }
+  .main__tabs_right .main__tabs_image {
+    width: 398px;
+    height: 385px;
+  }
+}
+
+@media screen and (max-width:1030px) {
+  .main__tabs_section, .main__tabs {
+    width: 97%;
+    margin-right: 0px;
+  }
+  .main__tabs_left {
+    padding-left: 30px;
+  }
+}
+
+@media screen and (max-width:940px) {
+  .main__tabs_header {
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    margin-top: 15px;
+  }
+  .main__tabs_button {
+    height: 50px;
+  }
+}
+
+@media screen and (max-width:840px) {
+  .main__tabs_right .main__tabs_image {
+    display: none;
+  }
+  .main__tabs_left {
+    padding: 0px 20px;
+    align-items: center;
+    margin-right: 0px;
+  }
+  .main__tabs_description {
+    max-width: 450px;
+    text-align: center;
+  }
+  .main__tabs_buttons {
+    width: 97%;
+  }
+  .main__tab {
+    padding: 10px 0px;
+    width: 33%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width:620px) {
+  .main__tab:last-child {
+    padding-right: 0px;
+  }
+  .main__tabs_description {
+    line-height: 15px;
+  }
+}
+
+@media screen and (max-width:425px) {
+  .main__tabs {
+    height: 470px;
+  }
+  .main__tabs_section {
+    height: 431px;
+  }
+  .main__tabs_description {
+    margin-bottom: 18px;
+  }
+}

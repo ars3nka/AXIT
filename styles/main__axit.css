@@ -5,7 +5,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  min-height: 951px;
+  height: 951px;
   display: flex;
   justify-content: center;
   align-items:center;
@@ -34,9 +34,13 @@
   margin-bottom: 55px;
 }
 
+.red-text {
+  color: #EC7979;
+}
+
 .main__axit_line {
   width: 170px;
-  border: 1px solid #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
   margin-bottom: 42px;
 }
 
@@ -65,14 +69,12 @@
   font-weight: 600;
   font-size: 18px;
   line-height: 25px;
-  display: flex;
-  align-items: center;
-  text-align: center;
   text-transform: capitalize;
   color: #FFFFFF;
   border: 2px solid #FFFFFF;
   background: transparent;
-  padding: 15px 90px;
+  width: 270px;
+  height: 58px;
 }
 
 .main__axit_form {
@@ -94,7 +96,7 @@
   text-align: center;
   text-transform: uppercase;
   color: #333333; 
-  margin-bottom: 70px;
+  margin-bottom: 40px;
 }
 
 .main__axit_form-input {
@@ -105,10 +107,13 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 19px;
-  /* identical to box height */
   color: #BDBDBD;
   width: 370px;
   padding: 16px 0px;
+}
+
+.main__axit_form-input:not(:last-child) {
+  margin-bottom: 33px;
 }
 
 .main__axit_form-input:focus {
@@ -122,13 +127,99 @@
   font-weight: 600;
   font-size: 15px;
   line-height: 20px;
-  display: flex;
   align-items: center;
   text-align: center;
   color: #FFFFFF;
   border: 0px;
-  margin-top: 80px;
   width: 470px;
-  padding: 30px 190px;
+  height: 60px;
   border-radius: 0px 0px 10px 10px;
+  margin-top: 30px;
 }
+
+/* @media */
+
+
+@media screen and (max-width: 1200px) {
+  .main__axit {
+    height: 768px;
+  }
+  .main__axit_text {
+    width: 45%;
+  }
+  .main__axit_logo {
+    width: 183px;
+    height: 74px;
+  }
+  .main__axit_header {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 41px;
+  }
+  .main__axit_line {
+    width: 115px;
+  }
+  .main__axit_description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .main__axit_button {
+    width: 183px;
+    height: 50px;
+  }
+  .main__axit_form, .main__axit_form-submit {
+    width: 398px;
+  }
+  .main__axit_form-submit {
+    margin-top: 36px;
+  }
+  .main__axit_form-input {
+    width: 298px;
+  }
+  .main__axit_form-header {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 51px;
+  }
+} 
+
+@media screen and (max-width: 800px) {
+  .main__axit {
+    height: 1005px;
+  }
+  .main__axit_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+  }
+  .main__axit_logo {
+    display: none;
+  }
+  .main__axit_header {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main__axit_form {
+    width: 288px;
+    height: 381px;
+  }
+  .main__axit_form-submit {
+    width: 288px;
+    margin-top: 9px;
+  }
+  .main__axit_form-input {
+    width: 240px;
+  }
+  .main__axit_form-header {
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 20px;
+  }
+}
+
