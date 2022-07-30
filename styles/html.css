@@ -13,3 +13,24 @@ a {
   text-decoration:none;
 }
 
+.main__tabs_button:hover, .main__contact-form-button:hover, .main__axit_form-submit:hover {
+  background: #AB4949;
+  cursor: pointer;
+}
+
+.main__tabs_button:active, .main__contact-form-button:active, .main__axit_form-submit:active {
+  background: #EC7979;
+  box-shadow: inset 0px 0px 10px #AB4949;
+}
+
+.main__axit_button:hover, .main__stylish-button:hover {
+  border: 2px solid #EC7979;
+  color: #EC7979;
+  cursor: pointer;
+}
+
+.main__axit_button:active, .main__stylish-button:active {
+  background: #AB4949;
+  border: 2px solid #AB4949;
+  color: #FFFFFF;
+}

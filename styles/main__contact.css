@@ -100,3 +100,18 @@
     width: 400px;
   }
 }
+
+@media screen and (max-width:470px) {
+  .main__contact-form-input, .main__contact-form-textarea {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width:360px) {
+  .main__contact-form-input, .main__contact-form-textarea {
+    width: 280px;
+  }
+  .main__contact-form-button {
+    width: 280px;
+  }
+}
