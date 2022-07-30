@@ -44,5 +44,31 @@
   }
 }
 
+@media screen and (max-width:660px) {
+  .header {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .header__nav_link:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width:610px) {
+  .header__nav_link:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width:570px) {
+  .header__nav {
+    display: none;
+  }
+  .header {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+}
+
 
 

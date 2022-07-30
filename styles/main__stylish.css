@@ -51,11 +51,41 @@
   line-height: 25px;
   display: flex;
   align-items: center;
-  text-align: center;
+  justify-content: center;
   text-transform: capitalize;
   color: #FFFFFF;
   border: 2px solid #FFFFFF;
   background: transparent;
-  padding: 15px 140px;
+  width: 370px;
+  height: 58px;
 }
 
+@media screen and (max-width:1200px) {
+  .main__stylish {
+    height: 358px;
+    padding: 0px 2%;
+  }
+  .main__stylish-header {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .main__stylish-line {
+    width: 142px;
+    margin-bottom: 32px;
+  }
+  .main__stylish-description {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 32px;
+  }
+  .main__stylish-button {
+    width: 318px;
+  }
+}
+
+@media screen and (max-width:450px) {
+  .main__stylish-button {
+    width: 287px;
+    height: 50px;
+  }
+}

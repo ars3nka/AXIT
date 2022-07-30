@@ -70,11 +70,33 @@
   font-size: 18px;
   line-height: 25px;
   text-transform: capitalize;
-  /* display: flex;
-  align-items: center;
-  text-align: center; */
   color: #FFFFFF;
   border: 0px;
   width: 370px;
-  padding: 15px 0px;
+  height: 58px;
+}
+
+@media screen and (max-width:1240px) {
+  .main__contact-form-input, .main__contact-form-textarea {
+    width: 486px;
+  }
+  .main__contact-form-button {
+    width: 318px;
+  }
+}
+
+@media screen and (max-width:1050px) {
+  .main__contact-form-div {
+    flex-direction: column;
+  }
+  .main__contact-form-inputs-div {
+    margin-right: 0px;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width:580px) {
+  .main__contact-form-input, .main__contact-form-textarea {
+    width: 400px;
+  }
 }

@@ -70,3 +70,64 @@
 .main__customers_item-author-image-div {
   margin-right: 30px;
 }
+
+@media screen and (max-width:1200px) {
+  .main__customers_item {
+    width: 317px;
+  }
+  .main__customers_item-author-name {
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 9px;
+  }
+  .main__customers_item-author-profession {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .main__customers_item:not(:last-child) {
+    margin-right: 20px;
+  }
+  .main__customers_item-author-image-div {
+    margin-right: 22px;
+  }
+  .main__customers_item-author-image {
+    height: 63px;
+  }
+  .main__customers_item-text {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .main__customers-description {
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (max-width:1020px) {
+  .main__customers_item {
+    width: 288px;
+  }
+  .main__customers_item-author-name {
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .main__customers_item-author-profession {
+    font-size: 13px;
+    line-height: 15px;
+  }
+  .main__customers_item-author-image {
+    height: 57px;
+  }
+  .main__customers-description {
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (max-width:920px) {
+  .main__customers_items {
+    flex-direction: column;
+  }
+  .main__customers_item:not(:last-child) {
+    margin-right: 0px;
+    display: none;
+  }
+}

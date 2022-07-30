@@ -12,6 +12,10 @@
   flex-wrap: wrap;
 }
 
+.main__pricing_item {
+  width: 370px;
+}
+
 .main__pricing_item:not(:last-child) {
   margin-right: 30px;
 }
@@ -37,7 +41,6 @@
   background: #333333;
   border: 2px solid #F5F5F5;
   height: 60px;
-  width: 370px;
 }
 
 .main__pricing_item-price {
@@ -53,7 +56,6 @@
   background: #333333;
   border: 2px solid #F5F5F5;
   height: 100px;
-  width: 370px;
 }
 
 .main__pricing_item-desc {
@@ -85,4 +87,63 @@
   background: #FFFFFF;
   border: 2px solid #F5F5F5;
   height: 50px;
+}
+
+@media screen and (max-width:1200px) {
+  .main__section-description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 55px;
+  }
+  .main__pricing_item {
+    width: 317px;
+  }
+  .main__pricing_item-header {
+    height: 53px;
+  }
+  .main__pricing_item-price {
+    height: 88px;
+  }
+  .main__pricing_item-desc, .main__pricing_item-description {
+    height: 44px;
+  }
+  .main__pricing_item:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width:1020px) {
+  .main__pricing_item {
+    width: 288px;
+  }
+}
+
+@media screen and (max-width:930px) {
+  .main__pricing_items {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main__pricing_item:not(:last-child) {
+    margin-right: 0px;
+    margin-bottom: 27px;
+  }
+  .main__pricing_item-header {
+    height: 47px;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .main__pricing_item-price {
+    height: 78px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .main__pricing_item-desc, .main__pricing_item-description {
+    height: 39px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .main__section-description {
+    margin-bottom: 24px;
+  }
 }
